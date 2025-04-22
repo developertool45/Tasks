@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracking system</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container-board">
+        <div class="add-task">
+            <input class="task-input" placeholder="Add Task...."/>
+            <button type="submit">Add</button>
+        </div>
+        
+        <div class="container">
+            <div class="board todo">
+                <div class="board-header">
+                    <i class="ri-todo-line"></i>
+                    <h3 class="todo"> To Do</h3>
+                </div>
+                <div class="items">
+                    <p draggable="true" class="item">Task that you can perform as soon as possible, Task that you can perform as soon as possible                        
+                    </p>
+                    <p draggable="true" class="item ">Task that you can perform as soon as possible, Task that you can perform as soon as possible                        
+                    </p>
+                    
+                </div>
+               
+            </div>
+            <div class="board progress">
+                <div class="board-header">
+                    <i class="ri-donut-chart-line"></i>
+                    <h3 class="progress"> In Progress</h3>
+                </div>
+                 <div class="items">
+                   
+                    
+                </div>
+            </div>
+            <div class="board completed">
+                <div class="board-header">
+                    <i class="ri-calendar-check-fill"></i>
+                    <h3 class="done"> Completed</h3>
+                </div>
+                 <div class="items">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

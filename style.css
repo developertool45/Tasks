@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+    
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #efecec;
+    gap: 1.5rem;
+}
+.board{
+    height: 80vh;
+    width: 30%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.board-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #c9c9c9;
+}
+.board-header i{
+    font-size: 1.5rem;
+}
+.board-header h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.board-header h3.todo{
+    color: #373737;
+}
+.board-header h3.progress{
+    color: #e68a00;
+}
+.board-header h3.done{
+    color: #01ab80;
+}
+.items {
+    display: flex;
+    flex-direction:column;
+    padding: 1rem;
+    gap: 1rem;
+}
+.item{
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+    color: #444444;
+    font-weight: 400;
+    cursor: pointer;    
+    transition: 0.3s;
+}
+.item.pt{
+    background-color:#f9c06c;
+}
+.item.pd{
+    background-color:#079975;
+    color: #fff;
+}
+
+.item.pt:hover{
+     background-color:#efb660;
+}
+.item.pd:hover{
+    background-color:#09ac83;
+}
+.item:hover{
+    background-color: #d9d9d9;
+}
+.board{
+    position: relative;
+    padding: 0.5rem;
+}
+.add-task{    
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;    
+    /* border: 1px solid #b3b2b2; */
+    padding: 8px; 
+    display: flex;
+    gap: 1rem;
+}
+.task-input{
+     width: 70%;    
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    color: #444444; 
+    border-radius: 4px;     
+    outline: none;  
+    border: 1px solid #b3b2b2;
+}
+.add-task button{
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    color: #ffffff; 
+    background-color: #e76321;    
+    border: none;
+    border-radius: 4px;
+    width: 28%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.add-task button:hover{
+    background-color: #e68a00;
+}
+
+
+
+
+
