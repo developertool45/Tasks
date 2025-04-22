@@ -14,7 +14,7 @@ addTaskBtn.addEventListener("click", () => {
   }
 });
 function addTask(task) {
-    const parent = document.querySelector(".main .items");       
+    const parent = document.querySelector(".todo .items");       
     const item = document.createElement("p");
     item.classList.add("item");
     item.draggable = true;
