@@ -82,6 +82,32 @@ body{
 .item:hover{
     background-color: #d9d9d9;
 }
+.item p{
+    position: relative;
+}
+.btns{
+    margin-top: 10px;
+    display: block;
+}
+.btns i{ 
+    font-size: 1.1rem;    
+    cursor: pointer;
+    background-color: orange;
+    transition: 0.3s;
+    padding: 5px 7px;
+    border-radius: 0.4rem;  
+    display: inline-block;
+    transition: 0.3s;  
+}
+.btns i:last-child {
+    background-color: #302f2f;
+    color:#dcdada;
+    margin-left: 10px;
+}
+.btns i:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 .board{
     position: relative;
     padding: 0.5rem;
